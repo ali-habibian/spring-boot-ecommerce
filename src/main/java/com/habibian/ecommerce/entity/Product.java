@@ -9,6 +9,9 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author Ali
+ */
 @Entity
 @Table(name = "product")
 @Getter

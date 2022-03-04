@@ -6,6 +6,9 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Set;
 
+/**
+ * @author Ali
+ */
 @Entity
 @Table(name = "product_category")
 @Getter

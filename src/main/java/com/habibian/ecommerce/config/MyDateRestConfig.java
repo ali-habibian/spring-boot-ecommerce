@@ -2,7 +2,6 @@ package com.habibian.ecommerce.config;
 
 import com.habibian.ecommerce.entity.Product;
 import com.habibian.ecommerce.entity.ProductCategory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
@@ -18,6 +17,9 @@ import java.util.Set;
 
 import static org.springframework.http.HttpMethod.*;
 
+/**
+ * @author Ali
+ */
 @Configuration
 public class MyDateRestConfig implements RepositoryRestConfigurer {
 
@@ -56,7 +58,7 @@ public class MyDateRestConfig implements RepositoryRestConfigurer {
         List<Class> entityClasses = new ArrayList<>();
 
         // - get the entity types for the entities
-        for (EntityType tempEntityType : entities){
+        for (EntityType tempEntityType : entities) {
             entityClasses.add(tempEntityType.getJavaType());
         }
 
